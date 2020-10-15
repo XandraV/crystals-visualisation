@@ -6,10 +6,12 @@
 ![react](https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white)
 ![styled](https://img.shields.io/badge/-Styled_Components-db7092?style=flat-square&logo=styled-components&logoColor=white)
 
-Visualised the distribution of the number of distinct elements in minerals by groups.
-
+Visualised the distribution of the number of distinct elements in minerals by groups. Visit the deployed app [here](https://master.d2b5wlikr2ohpz.amplifyapp.com/).
 
 ![Alt text](/public/preview.png)
+
+
+The data used in this application was collected from https://www.mindat.org.
 
 ## Installation
 
