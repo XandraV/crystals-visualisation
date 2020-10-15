@@ -1,25 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Crystal = (props) => {
   const { size, mineral } = props;
-  const [hovered, setHovered] = useState(false);
   const elements = mineral.elements;
   const elementsNum = elements.map((_, idx) => elements.length - idx - 1);
 
   return (
     <svg
-      width={100}
-      height={150}
+      width={50}
+      height={50}
       viewBox={`0 0 ${size} ${size}`}
       style={{
         overflow: "visible",
-        paddingLeft: "5rem",
-        background: `${hovered ? "lightgrey" : ""}`,
-        borderRadius: "20%",
-        margin: "1rem",
+        paddingLeft: "1rem",
+        marginRight: props.marginRight || 0,
       }}
-      onMouseOver={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
     >
       {/* <defs>
         <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
@@ -51,7 +46,7 @@ const Crystal = (props) => {
             }
             stroke="#e6e6e9"
             fill={mineral.colour}
-            opacity={0.8}
+            opacity={0.7}
             strokeWidth="0.2rem"
           />
           {/* connecting border with the rectangle */}

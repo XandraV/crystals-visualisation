@@ -1,71 +1,58 @@
 import React from "react";
-import BubbleChart from "./BubbleChart";
-import Crystal from "./Crystal";
 import { minerals } from "./data";
-import {
-  arsenates,
-  carbonates,
-  oxides,
-  silicates,
-  sulfates,
-} from "./bubbleData";
+import Crystal from "./Crystal";
+import { arsenates, oxides, silicates, sulfates } from "./bubbleData";
+import GroupRow from "./GroupRow";
+import { color } from "./BubbleChart";
 
 function App() {
   return (
-    <div className="App">
-      <span style={{ textAlign: "center", display: "inline-block" }}>
-        <div>Arsenates</div>
-        <div>
-          <BubbleChart data={arsenates} />
-        </div>
-      </span>
-      <span style={{ textAlign: "center", display: "inline-block", fontWeight: 700 }}>
-        <div>Carbonates</div>
-        <div>
-          <BubbleChart data={carbonates} />
-        </div>
-      </span>
-      <span style={{ textAlign: "center", display: "inline-block", fontWeight: 700 }}>
-        <div>Oxides</div>
-        <div>
-          <BubbleChart data={oxides} />
-        </div>
-      </span>
-      <span style={{ textAlign: "center", display: "inline-block", fontWeight: 700 }}>
-        <div>Silicates</div>
-        <div>
-          <BubbleChart data={silicates} />
-        </div>
-      </span>
-      <span style={{ textAlign: "center", display: "inline-block", fontWeight: 700 }}>
-        <div>Sulfates</div>
-        <div>
-          <BubbleChart data={sulfates} />
-        </div>
-      </span>
-      <div style={{ textAlign: "center" }}>
-        {minerals.map((group) => (
-          <div key={Object.keys(group)[0]}>
-            <div
-              style={{
-                fontSize: "1.2rem",
-                fontWeight: 700,
-                display: "inline-block",
-                paddingTop: "2rem",
-              }}
-            >
-              {Object.keys(group)[0]}
-            </div>
-            <div>
-              {Object.values(group)[0].map((m) => (
-                <span key={m.name}>
-                  <Crystal size={1200} mineral={m} />
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ fontSize: "3rem" }}>crystal elements</h1>
+      <div style={{ paddingBottom: "4rem" }}>
+        <p>distribution of distinct elements in minerals</p>
+        <p>reimagined as crystals</p>
+        (
+        <a href="https://github.com/XandraV" target="_blank">
+          alexandra v
+        </a>
+        )
       </div>
+      <div style={{ paddingBottom: "3rem" }}>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+          <Crystal
+            key={`crystal-${i}`}
+            size={800}
+            mineral={{
+              name: `${i}`,
+              elements: new Array(i).fill(1),
+              colour: color(i),
+            }}
+            marginRight={"1rem"}
+          />
+        ))}
+        <p>number of elements</p>
+      </div>
+      <GroupRow
+        title="Arsenates"
+        rowData={minerals[0].Arsenates}
+        bubbleData={arsenates}
+      />
+      <GroupRow
+        title="Oxides"
+        rowData={minerals[1].Oxides}
+        bubbleData={oxides}
+      />
+      <GroupRow
+        title="Silicates"
+        rowData={minerals[2].Silicates}
+        bubbleData={silicates}
+      />
+      <GroupRow
+        title="Sulfates"
+        rowData={minerals[3].Sulfates}
+        bubbleData={sulfates}
+      />
     </div>
   );
 }
