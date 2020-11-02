@@ -4,6 +4,7 @@ import Crystal from "./Crystal";
 import { arsenates, oxides, silicates, sulfates } from "./bubbleData";
 import GroupRow from "./GroupRow";
 import { color } from "./BubbleChart";
+import Crystal3D from "./Crystal3D";
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
       <h1 style={{ fontSize: "3rem" }}>crystal elements</h1>
       <div style={{ paddingBottom: "4rem" }}>
         <p>distribution of distinct elements in minerals</p>
-        <p>reimagined as crystals</p>
-        (
+        <p>reimagined as crystals</p>(
         <a href="https://github.com/XandraV" target="_blank">
           alexandra v
         </a>

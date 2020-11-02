@@ -6,6 +6,7 @@ const Crystal = (props) => {
   const elementsNum = elements.map((_, idx) => elements.length - idx - 1);
 
   return (
+    <span>
     <svg
       width={50}
       height={50}
@@ -16,22 +17,6 @@ const Crystal = (props) => {
         marginRight: props.marginRight || 0,
       }}
     >
-      {/* <defs>
-        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-          <stop
-            offset="0%"
-            stopColor={`${props.mineral.colour}`}
-          />
-          <stop offset="100%" stopColor="#f9f6ef" />
-        </radialGradient>
-      </defs>
-      <circle
-        key={mineral.m}
-        cx={`100`}
-        cy={`300`}
-        r={`600`}
-        fill={`url(#grad1)`}
-      /> */}
       {elementsNum.map((idx) => (
         <g
           key={`component${idx}`}
@@ -98,7 +83,7 @@ const Crystal = (props) => {
           {mineral.name}
         </text>
       </g>
-    </svg>
+    </svg></span>
   );
 };
 

@@ -9,6 +9,7 @@ export const minerals = [
         colour: "#ED2B88",
         hardness: "2",
         specificGravity: "3.06",
+        shaderName: "pink",
       },
       {
         name: "Mimetite-M",
@@ -18,6 +19,7 @@ export const minerals = [
         colour: "#FFC619",
         hardness: "4",
         specificGravity: "7.36",
+        shaderName: "yellow",
       },
       {
         name: "Cobaltkoritnigite",
@@ -27,6 +29,7 @@ export const minerals = [
         hardness: "2",
         mindatLink: "https://www.mindat.org/min-1091.html",
         specificGravity: "3.44",
+        shaderName: "purple",
       },
       {
         name: "Clinoclase",
@@ -36,6 +39,7 @@ export const minerals = [
         colour: "#4A7EFF",
         hardness: "2.5",
         specificGravity: "4.38",
+        shaderName: "blue",
       },
       {
         name: "Hematolite",
@@ -46,6 +50,7 @@ export const minerals = [
         hardness: "3½",
         mindatLink: "https://www.mindat.org/min-1857.html",
         specificGravity: "3.49",
+        shaderName: "brown",
       },
     ],
   },
@@ -58,6 +63,7 @@ export const minerals = [
         colour: "#FFC619",
         hardness: "8.5",
         specificGravity: "3.75",
+        shaderName: "yellow",
       },
       {
         name: "Spinel",
@@ -66,6 +72,7 @@ export const minerals = [
         colour: "#F5010C",
         hardness: "7.5",
         specificGravity: "4",
+        shaderName: "red",
       },
       {
         name: "Magnetite",
@@ -75,6 +82,7 @@ export const minerals = [
         colour: "grey",
         hardness: "6",
         specificGravity: "5.175",
+        shaderName: "grey",
       },
       {
         name: "Nealite",
@@ -85,6 +93,7 @@ export const minerals = [
         hardness: "4",
         mindatLink: "https://www.mindat.org/min-2869.html",
         specificGravity: "5.89 (Calculated)",
+        shaderName: "brown",
       },
       {
         name: "Corundum",
@@ -93,6 +102,7 @@ export const minerals = [
         colour: "#ED2B88",
         hardness: "9",
         specificGravity: "3.9",
+        shaderName: "pink",
       },
     ],
   },
@@ -105,6 +115,7 @@ export const minerals = [
         colour: "#00E1ED",
         hardness: "7",
         specificGravity: "2.65 - 2.66",
+        shaderName: "lightblue",
       },
       {
         name: "Topaz",
@@ -114,6 +125,7 @@ export const minerals = [
         colour: ["#FFAE1A"],
         hardness: "8",
         specificGravity: "3.5",
+        shaderName: "yellow",
       },
       {
         name: "Zircon",
@@ -122,6 +134,7 @@ export const minerals = [
         colour: "#F5010C",
         hardness: "7.5",
         specificGravity: "4.6",
+        shaderName: "red",
       },
       {
         name: "Vesuvianite",
@@ -142,6 +155,7 @@ export const minerals = [
         colour: "#FFC619",
         hardness: "6.5",
         specificGravity: "3.3",
+        shaderName: "yellow",
       },
       {
         name: "Tanzanite",
@@ -151,6 +165,7 @@ export const minerals = [
         colour: "#4A7EFF",
         hardness: "6.5",
         specificGravity: "3.2",
+        shaderName: "blue",
       },
     ],
   },
@@ -163,6 +178,7 @@ export const minerals = [
         colour: "#C472FF",
         hardness: "3 ",
         specificGravity: "3.96 - 3.98",
+        shaderName: "purple",
       },
       {
         name: "Brochantite",
@@ -172,6 +188,7 @@ export const minerals = [
         colour: "#55C500",
         hardness: "3½ - 4",
         specificGravity: "3.97",
+        shaderName: "green",
       },
       {
         name: "Baryte",
@@ -180,6 +197,7 @@ export const minerals = [
         colour: "#E37400",
         hardness: "3",
         specificGravity: "4.50",
+        shaderName: "brown",
       },
       {
         name: "Chalcanthite",
@@ -188,6 +206,7 @@ export const minerals = [
         colour: "#4A7EFF",
         hardness: "2",
         specificGravity: "2.286",
+        shaderName: "blue",
       },
       {
         name: "Anglesite",
@@ -196,6 +215,7 @@ export const minerals = [
         colour: "#8A9296",
         hardness: "3",
         specificGravity: "6.3",
+        shaderName: "grey",
       },
     ],
   },
